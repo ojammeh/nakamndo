@@ -1,0 +1,26 @@
+@Departments = React.createClass
+  getInitialState: ->
+    departments: @props.data
+  getDefaultProps: ->
+    departments: []
+  render: ->
+    React.DOM.div
+      className: 'departments'
+      React.DOM.h1
+        className: 'title'
+        'Departments'
+       #React.createElement LiftForm, handleNewLift: @addLift
+       React.DOM.table
+        className: 'table table-bordered'
+        React.DOM.thead null,
+          React.DOM.tr null,
+            React.DOM.th null, 'Dept Name'
+            React.DOM.th null, 'Number'
+            React.DOM.th null, 'Direct Line'
+            React.DOM.th null, 'Descriptions'
+            React.DOM.th null, 'Actions'
+        React.DOM.tbody null,
+         for department in @state.departments
+          React.createElement Departments, key: department.id, department: department
+        console.log @state.departments
+				#console.log(@state.departments[0].department_name)

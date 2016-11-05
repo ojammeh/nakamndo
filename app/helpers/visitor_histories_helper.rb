@@ -1,0 +1,2 @@
+module VisitorHistoriesHelper
+end

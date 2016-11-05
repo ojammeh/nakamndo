@@ -1,0 +1,2 @@
+class VisitorHistoriesController < ApplicationController
+end

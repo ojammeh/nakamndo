@@ -1,0 +1,17 @@
+
+        <table className='table table-bordered'>
+          <thead>
+            <tr>
+              <th>Department Name</th>
+              <th>Inter-com</th>
+              <th>Direct Line</th>
+			        <th>Description</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.state.departments.map(function(dept) {
+              return <Department key={dept.id} dept={dept} />
+             }.bind(this))}
+          </tbody>
+        </table>

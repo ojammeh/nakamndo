@@ -1,0 +1,45 @@
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu">
+        <li class="header" align="center"><b>Your Modules</b></li>
+        <!-- Optionally, you can add icons to the links -->
+        <li class="active">
+          <a href="/">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          </a>
+        </li>
+				
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-users"></i> <span>Visitors Management</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href=""><i class="fa fa-circle-o"></i> List Visitors</a></li>
+            <li><a href=""><i class="fa fa-circle-o"></i> Check in/out Visits</a></li>
+            <li><a href=""><i class="fa fa-circle-o"></i> List Staffs</a></li>
+          </ul>
+        </li>
+				<!-- hr menu -->
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-university"></i> <span>Human Resources</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+						<li><%= link_to staff_details_path do %>
+						    <span class="fa fa-circle-o"></span> Manage Staff
+						    <% end %>
+					  </li>
+						<li><%= link_to departments_path do %>
+						    <span class="fa fa-list"></span> List Departments
+						    <% end %>
+					  </li>
+          </ul>
+        </li>
+        
+      </ul>
+      <!-- /.sidebar-menu -->
